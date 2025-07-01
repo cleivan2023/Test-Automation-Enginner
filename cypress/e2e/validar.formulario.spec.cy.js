@@ -19,9 +19,10 @@ describe("Acceso al site y envio de formulario", () => {
         cy.get('[name="email"]').type('test');
         cy.get('#message').type('Mensaje'); 
         cy.get('#fotos').type('Santiago');
+        cy.get('#notificaciones').check();
         cy.get('#enviar_formulario').click();
-        //cy.get('.contactenos').contains('Formulario enviado!');
-        cy.get('#enviar_formulario').should('be.visible');
+        //cy.get('#enviar_formulario').should('be.visible');
+        cy.get('.contactenos').contains('Formulario enviado!').should('not.exist');
 
     });
 
