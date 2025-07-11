@@ -9,6 +9,7 @@ describe("Hola Mundo Test", () => {
     
     cy.get('#formulario').should('be.visible'); //SELECTOR POR ID
     cy.get('.item-imagen').should('have.length', 9);
+
    });
 });
 
