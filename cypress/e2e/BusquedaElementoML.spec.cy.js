@@ -13,3 +13,6 @@ describe('Ingresar a Mercado Libre y buscar elementos', () => {
     cy.url().should('eq', 'https://www.mercadolibre.cl/')
   })
 })
+
+/* la prueba va a fallar y es porque el url va a cambiar el origen, o sea  de cl, se cambio a otra url*/
+
