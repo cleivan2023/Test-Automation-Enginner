@@ -42,8 +42,7 @@ describe('Pet Haven', () => {
         //cy.get('.error-message').should('contain.text', 'completa')
         cy.get('#register_btn').should('not.be.disabled').click();
 
-
-
     })
 
 })
+

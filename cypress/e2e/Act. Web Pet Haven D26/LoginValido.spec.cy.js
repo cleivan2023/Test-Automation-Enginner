@@ -5,7 +5,7 @@ describe('Web Pet Haven', () => {
         cy.get('#email').type('user1@example.com');
         cy.get('#password').type('password123');
         cy.get('#login_btn').click();
-        cy.get('#myprofile_link').should('exist')
+        cy.get('#myprofile_link').should('exist') //aca se valida que el usuario ingreso correctamente 
 
 
 

@@ -8,8 +8,9 @@ describe('Sistema de adopcion', () => {
 
     })
 
-    it('Verificar que el boton cerrar sesion esta disponible', () => {
+    it('Debe mostrar el link de profile', () => {
         //El usuario ya esta loqueado
-        cy.get('#btn_logout').should('be.visible')
+        cy.get('#myprofile_link').should('be.visible') 
+  
     })
 })
