@@ -1,7 +1,8 @@
 {
     "usuarioExistente": {
-        "email": "user1@example.com",
-        "password":"password123"
+        "name": "test",
+        "email": "admin@example.com",
+        "password":"adminpassword"
     },
     "nuevoUsuario": {
         "email": "nuevo@gmail.com",
