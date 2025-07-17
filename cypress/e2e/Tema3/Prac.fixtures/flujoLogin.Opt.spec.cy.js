@@ -34,6 +34,8 @@ describe('Visit te URL to login', () => {
 
         });
 
+   
+
     after(() =>{
         cy.wait(3000)
         cy.get('#btn_logout').click()

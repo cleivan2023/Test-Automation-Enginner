@@ -32,3 +32,6 @@ describe('Sistema de adopción', {TestIsolation: false }, () => {
 
 
 })
+
+//el codigo arroja error, ya que el codigo se destruye despues que se limpia 
+//esta prueba es ideal para que se llenen los campos solo una vez como la validacion de crecenciales de los bbancos 

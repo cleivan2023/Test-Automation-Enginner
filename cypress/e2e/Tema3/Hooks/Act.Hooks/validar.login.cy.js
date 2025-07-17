@@ -1,26 +1,33 @@
 describe('Visit te URL to login', () => {
     beforeEach(() => {
-        cy.visit('https://adopcion-react-typescript-ia-semana.vercel.app/')
+        cy.visit('https://adopcion-react-typescript-ia-semana.vercel.app')
+        cy.get('#link_login').click()
     })
 
     it('should not long in with invalid params', () => {
-        cy.get('#link_login').click()
-        cy.get('input[type="email"]').clean()
-        //cy.get('input[type="email"]').type('user1@example.com')
-        cy.get('input[type="password"]').clean()
-        //cy.get('input[type="password"]').type('password123')
-        //cy.get('#login_btn').click()
-        //cy.get('#pet_4').click()
+        cy.get('input[type="email"]').clear()
+        cy.get('input[type="password"]').clear()
+        cy.get('#login_btn').click()
+        cy.url().should(
+            'eq',
+            'https://adopcion-react-typescript-ia-semana.vercel.app/login'
+        )
 
     })
 
     it('shoullog in with valid parems', () => {
-        cy.get('#link_login').click()
         cy.get('input[type="email"]').type('user1@example.com')
         cy.get('input[type="password"]').type('password123')
         cy.get('#login_btn').click()
-        cy.get('#pet_4').click()
+        cy.get('#myprofile_link').should('exist')
+        //cy.get('#pet_4').click()
 
+    })
+    after(() =>{
+        cy.wait(3000)
+        cy.get('#btn_logout').click()
+        cy.clearLocalStorage()
+        cy.clearCookies()
     })
 
 })

@@ -1,5 +1,6 @@
 describe('Acceso a las mascotas', () => {
     beforeEach(() => { //para cada prueba
+        //con el beforeEach, solo se coloca el visit aca y se evita repetir el visit
         cy.visit('https://adopcion-react-typescript-ia-semana.vercel.app/')
     })
 

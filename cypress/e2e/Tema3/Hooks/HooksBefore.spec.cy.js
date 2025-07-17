@@ -1,5 +1,6 @@
 describe('Sistema de adopcion', () => {
     before(() => {
+        cy.wait(10000);
         cy.visit('https://adopcion-react-typescript-ia-semana.vercel.app/');
         cy.get('#link_login').click();
         cy.get('#email').type('user1@example.com');
