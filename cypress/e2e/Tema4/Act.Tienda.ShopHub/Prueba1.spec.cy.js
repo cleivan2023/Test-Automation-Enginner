@@ -11,6 +11,7 @@ describe('Visit the Url to register an user', () => {
       cy.get('#password').type(usuarios.usuarioExistente.password)
       cy.get('#confirmPassword').type(usuarios.usuarioExistente.password)
       cy.get('button[type="submit"]').click()
+      //posible error del span
       cy.get('span').contains('Hello').should('be.visible')
       cy.get('#product_3 > div > div.p-4 > div.flex.items-center.justify-between > button').click()
       cy.get('a[href="/cart"]').click()
@@ -23,13 +24,6 @@ describe('Visit the Url to register an user', () => {
       })
     })
 })
-
-
-
-
-
-
-
 
 
 

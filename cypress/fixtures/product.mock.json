@@ -1,0 +1,12 @@
+{
+    "id": 3,
+    "title": "Laptop Pro",
+    "price": 1200,
+    "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+    "category": "men's clothing",
+    "image": "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111972_SP748-mbp13touch-silver.jpeg",
+    "rating": {
+        "rate": 3.9,
+        "count": 120
+    }
+}
