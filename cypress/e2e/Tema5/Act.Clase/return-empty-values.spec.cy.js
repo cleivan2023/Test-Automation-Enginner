@@ -1,4 +1,4 @@
-//Mock para simular retorno vacío, debe aparecer el mensaje. Ningún producto disponible.
+//1- Mock para simular retorno vacío, debe aparecer el mensaje. Ningún producto disponible.
 describe('visit the URL to simulate server general error', () => {
     beforeEach(() => {
         cy.visit('https://ecommerce-js-test.vercel.app/')
