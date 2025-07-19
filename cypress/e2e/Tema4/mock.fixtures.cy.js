@@ -55,7 +55,7 @@ describe("Carga de productos", () => {
 
     });
 
-    it("Retorno OK, sin Datos", () => { //
+    it("Retorno OK, sin Datos", () => { // va a dar error 
         cy.intercept("GET", apiURL, {
             statusCode: 200   //es el codigo de respuesta de la norma (los gatitos de error)
         
@@ -69,3 +69,5 @@ describe("Carga de productos", () => {
 
     });
 });
+
+
