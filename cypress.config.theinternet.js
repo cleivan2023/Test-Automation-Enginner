@@ -4,10 +4,15 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: "https://www.saucedemo.com", //mi variable y la puedo ocupar en cualquiera de mis test 
+    baseUrl: "https://the-internet.herokuapp.com/", //mi variable y la puedo ocupar en cualquiera de mis test 
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+
+    /*env: {
+      username: "tomsmith",
+      password: "SuperSecretPassword!",  
+    },  */
 
 
 //aca  se le pide a cypress que tome videos o grabar lo que esta haciendo 

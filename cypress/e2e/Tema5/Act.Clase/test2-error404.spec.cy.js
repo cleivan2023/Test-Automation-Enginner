@@ -12,7 +12,7 @@ describe('validando estados de errore y casos especiales del API de productos', 
 
 it("Mock recurso no valido - 404 - mensaje: solicitud de consulta no valida", () => {
     cy.intercept('GET', '**/products', {
-            statusCode: 404, 
+            statusCode: 404, //esta solicitud ignora el body o no lo manda
             body: { message: 'Solicitud de consulta no válida'}
         }).as('getProducts404');
 

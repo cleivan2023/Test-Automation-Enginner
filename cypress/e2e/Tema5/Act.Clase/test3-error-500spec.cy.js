@@ -1,3 +1,5 @@
+//3- Mock para simular error general del servidor. Validar mensaje. Error general de la API
+
 describe('visit the URL to simulate server general error', () => {
     beforeEach(() => {
         cy.visit('https://ecommerce-js-test.vercel.app/')
