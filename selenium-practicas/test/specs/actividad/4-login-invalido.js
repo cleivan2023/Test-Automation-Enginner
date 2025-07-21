@@ -1,5 +1,7 @@
 //4- Login con datos incorrectos
+//revisar el codigo
 
+//variables del sitio
 const baseURL = 'https://ecommerce-js-test.vercel.app/';
 const user = 'Admin User';
 const email = 'admin@example.com';

@@ -24,3 +24,6 @@ describe('Navegación em MercadoLibre', () => {
     });
 
 });
+
+//el problema del "spaghetti Test"
+//por la cantidad de cambios y el tocar el codigo de las pruebas
